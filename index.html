@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA DE PIZZAS</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><h1>SISTEMA DE LANÇAMENTO DE PIZZAS</h1></li>
+            <li><h2>Vendas de Pizzas</h2></li>
+        </ul>
+    </header>
+
+    <section>
+        <form>
+            <h3>Selecione a pizza que o cliente deseja:</h3>
+                <ul>
+                    <li><input type="radio" id="marguerita" name="pizzas"><label for="marguerita">Marguerita</label></li>
+                    <li><input type="radio" id="campestre" name="pizzas"><label for="campestre">Campestre</label></li>
+                    <li><input type="radio" id="Barbecue" name="pizzas"><label for="Barbecue">Barbecue</label></li>
+                </ul>
+        </form>
+    </section>
+
+    <section>
+        <button id="adicionar">Adicionar</button>
+        <button id="retirar">Retirar</button>
+    </section>
+
+    <section id="table">
+        <table>
+            <tr>
+                <th>Sabores</th>
+                <th>Quantidade</th>
+                <th>Valores</th>
+            </tr>
+            <tr>
+                <td>Marguerita</td>
+                <td id="resultadoMarguerita"></td>
+                <td id="vendaMarguerita"></td>
+            </tr>
+            <tr>
+                <td>Campestre</td>
+                <td id="resultadoCampestre"></td>
+                <td id="vendaCampestre"></td>
+            </tr>
+            <tr>
+                <td>Barbecue</td>
+                <td id="resultadoBarbecue"></td>
+                <td id="vendaBarbecue"></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <button id="export">Planilha</button>
+    </section>
+    
+    <footer>
+        <p class="footer-p">made by : <span class="footer-span">yellowdev</span></p>
+    </footer>
+
+    <script src="javascript.js"></script>
+    <script src="DOWNLOADS/tableToExcel.js"></script>
+</body>
+</html>
